@@ -10,7 +10,7 @@ El Agent Development Kit (ADK) de Google es un framework de código abierto dise
 
 Este curso está estructurado en varios módulos, cada uno enfocado en un aspecto clave de ADK:
 
-1.  **Módulo 1: Introducción al ADK (`Introduccion_a_ADK.ipynb`)**
+1.  **Módulo 1: Introducción al ADK (`sources/Clase 1 - Introducción al Desarrollo de Agentes de IA con Google ADK`)**
     *   Conceptos fundamentales del ADK.
     *   Ventajas clave y por qué usarlo.
     *   Instalación y configuración del entorno.
@@ -49,7 +49,7 @@ Este curso está estructurado en varios módulos, cada uno enfocado en un aspect
 1.  **Clona el repositorio:**
     ```bash
     git clone https://github.com/alarcon7a/google-adk-course
-    cd TU_REPOSITORIO
+    cd google-adk-course
     ```
 2.  **Opción A: Ejecutar en Google Colab (Recomendado para empezar):**
     *   Haz clic en el botón "Abrir en Colab" en la parte superior de este README.
