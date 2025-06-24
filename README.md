@@ -123,10 +123,4 @@ Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo `LICENSE` 
 
 ---
 
-¡Esperamos que este curso te sea de gran utilidad para dominar el Google ADK!
-
-Estructura de Carpetas (Opcional): Si el proyecto crece, podrías organizar los notebooks en subcarpetas (ej., 01-Introduccion/, 02-Manejo-LLMs/, etc.).
-
-Reemplaza los placeholders: No olvides cambiar TU_USUARIO/TU_REPOSITORIO en el enlace de Colab.
-
-Este README debería proporcionar una excelente introducción y guía para los usuarios de tu curso. ¡Mucha suerte!
+¡Espero que este curso te sea de gran utilidad para dominar el Google ADK!
