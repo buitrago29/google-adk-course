@@ -37,20 +37,6 @@ Este curso está estructurado en varios módulos, cada uno enfocado en un aspect
         *   Herramientas con estado y contexto (ej. carrito de compras).
         *   Combinación de múltiples herramientas en un agente especializado (ej. agente de e-commerce).
 
-## 🎯 ¿Qué Aprenderás?
-
-Al finalizar este curso, serás capaz de:
-
-*   Entender la arquitectura y los componentes principales de Google ADK.
-*   Instalar, configurar y ejecutar agentes ADK.
-*   Integrar y utilizar diversos LLMs (Gemini, Claude, GPT, modelos locales con Ollama) a través de LiteLLM.
-*   Controlar el comportamiento de los LLMs mediante parámetros de generación.
-*   Definir esquemas de salida estructurados con Pydantic para obtener respuestas JSON consistentes.
-*   Utilizar herramientas preconstruidas como búsqueda web y ejecución de código.
-*   Diseñar, implementar e integrar herramientas personalizadas en tus agentes.
-*   Aplicar buenas prácticas en la creación de herramientas para optimizar la interacción con el LLM.
-*   Construir agentes más complejos que manejen estado y combinen múltiples capacidades.
-
 ## 🛠️ Prerrequisitos
 
 *   Conocimientos básicos de Python.
@@ -62,7 +48,7 @@ Al finalizar este curso, serás capaz de:
 
 1.  **Clona el repositorio:**
     ```bash
-    git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+    git clone https://github.com/alarcon7a/google-adk-course
     cd TU_REPOSITORIO
     ```
 2.  **Opción A: Ejecutar en Google Colab (Recomendado para empezar):**
@@ -125,48 +111,12 @@ Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo `LICENSE` 
 ## 🙏 Agradecimientos
 
 *   Al equipo de Google por desarrollar y mantener el Agent Development Kit.
-*   A las comunidades de LiteLLM y Pydantic por sus excelentes bibliotecas.
+*   A las comunidades de AI por sacar tantas herramientas de integración increible
+*   A mis seguidores en redes sociales y mi canal de YouTube
 
 ---
 
 ¡Esperamos que este curso te sea de gran utilidad para dominar el Google ADK!
-
-
-Recomendaciones Adicionales para tu Repositorio:
-
-.gitignore: Asegúrate de tener un archivo .gitignore que excluya archivos como .env, entornos virtuales (adk-env/), y archivos de caché de Jupyter (.ipynb_checkpoints/, __pycache__/).
-
-Generated code
-# .gitignore
-.env
-adk-env/
-.ipynb_checkpoints/
-__pycache__/
-*.pyc
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-IGNORE_WHEN_COPYING_END
-
-.env.example: Crea un archivo .env.example para mostrar qué variables de entorno se necesitan, sin incluir tus claves reales.
-
-Generated env
-# .env.example
-GOOGLE_API_KEY="TU_GOOGLE_API_KEY_AQUI"
-# Opcional:
-OPENAI_API_KEY="TU_OPENAI_API_KEY_AQUI"
-ANTHROPIC_API_KEY="TU_ANTHROPIC_API_KEY_AQUI"
-# Para Azure OpenAI, si lo usas:
-# AZURE_API_KEY="TU_AZURE_API_KEY_AQUI"
-# AZURE_API_BASE="TU_ENDPOINT_AZURE_AQUI"
-# AZURE_API_VERSION="TU_VERSION_API_AZURE_AQUI" # ej. 2023-07-01-preview
-IGNORE_WHEN_COPYING_START
-content_copy
-download
-Use code with caution.
-Env
-IGNORE_WHEN_COPYING_END
 
 Estructura de Carpetas (Opcional): Si el proyecto crece, podrías organizar los notebooks en subcarpetas (ej., 01-Introduccion/, 02-Manejo-LLMs/, etc.).
 
