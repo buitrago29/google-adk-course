@@ -1,2 +1,175 @@
-# google-adk-course
-Google ADK course (Spanish)
+# 🚀 Curso Práctico de Google Agent Development Kit (ADK) 🤖
+
+¡Bienvenido al curso práctico y avanzado sobre el Google Agent Development Kit (ADK)! Este repositorio contiene una serie de notebooks de Jupyter diseñados para llevarte desde los fundamentos hasta técnicas avanzadas en el desarrollo de agentes de IA con ADK.
+
+## 🎯 ¿Qué es Google ADK?
+
+El Agent Development Kit (ADK) de Google es un framework de código abierto diseñado para simplificar el desarrollo de agentes y sistemas multiagente inteligentes. Permite construir sistemas donde múltiples agentes colaboran, utilizando cualquier modelo de IA (Gemini, Claude, GPT, Llama, etc.) y ofreciendo herramientas integradas para tareas comunes.
+
+## 📚 Contenido del Curso
+
+Este curso está estructurado en varios módulos, cada uno enfocado en un aspecto clave de ADK:
+
+1.  **Módulo 1: Introducción al ADK (`Introduccion_a_ADK.ipynb`)**
+    *   Conceptos fundamentales del ADK.
+    *   Ventajas clave y por qué usarlo.
+    *   Instalación y configuración del entorno.
+    *   Componentes principales: Agentes, Herramientas (Tools), Ejecutores (Runners) y Sesiones (Sessions).
+    *   Creación de tu primer agente funcional con búsqueda en Google.
+    *   Uso de `adk web` y `adk run` para interactuar con agentes.
+
+2.  **Módulo 2: Manejo Avanzado de LLMs (`Manejo_de_LLM.ipynb`)**
+    *   Flexibilidad de modelos con **LiteLLM**: Integración de Claude, GPT, Llama y otros.
+    *   Ajuste fino del comportamiento del LLM con parámetros (`temperature`, `top_p`, `max_output_tokens`).
+    *   Generación de **output estructurado** utilizando Pydantic para respuestas JSON predecibles y validadas.
+    *   Ejemplos prácticos comparando diferentes modelos y configuraciones.
+
+3.  **Módulo 3: Dominando las Herramientas (Tools) (`Uso_de_Tools.ipynb`)**
+    *   Concepto y importancia de las Herramientas en ADK.
+    *   Uso de **herramientas preconstruidas**:
+        *   `google_search`: Para búsqueda de información actualizada.
+        *   `BuiltInCodeExecutor`: Para ejecución segura de código Python generado por el LLM.
+    *   Creación de **herramientas personalizadas**:
+        *   Definición de funciones con type hints y docstrings descriptivos.
+        *   Ejemplos: Calculadora, Búsqueda de Productos, Cálculo de Porcentajes.
+    *   **Buenas prácticas** para el diseño de herramientas efectivas.
+    *   Casos de uso avanzados:
+        *   Herramientas con estado y contexto (ej. carrito de compras).
+        *   Combinación de múltiples herramientas en un agente especializado (ej. agente de e-commerce).
+
+## 🎯 ¿Qué Aprenderás?
+
+Al finalizar este curso, serás capaz de:
+
+*   Entender la arquitectura y los componentes principales de Google ADK.
+*   Instalar, configurar y ejecutar agentes ADK.
+*   Integrar y utilizar diversos LLMs (Gemini, Claude, GPT, modelos locales con Ollama) a través de LiteLLM.
+*   Controlar el comportamiento de los LLMs mediante parámetros de generación.
+*   Definir esquemas de salida estructurados con Pydantic para obtener respuestas JSON consistentes.
+*   Utilizar herramientas preconstruidas como búsqueda web y ejecución de código.
+*   Diseñar, implementar e integrar herramientas personalizadas en tus agentes.
+*   Aplicar buenas prácticas en la creación de herramientas para optimizar la interacción con el LLM.
+*   Construir agentes más complejos que manejen estado y combinen múltiples capacidades.
+
+## 🛠️ Prerrequisitos
+
+*   Conocimientos básicos de Python.
+*   Comprensión fundamental de los Modelos de Lenguaje Grandes (LLMs).
+*   Cuenta de Google (para ejecutar en Google Colab).
+*   **API Keys** para los modelos que desees utilizar (Google AI Studio, OpenAI, Anthropic, etc.).
+
+## 🚀 Cómo Empezar
+
+1.  **Clona el repositorio:**
+    ```bash
+    git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+    cd TU_REPOSITORIO
+    ```
+2.  **Opción A: Ejecutar en Google Colab (Recomendado para empezar):**
+    *   Haz clic en el botón "Abrir en Colab" en la parte superior de este README.
+    *   Abre cada notebook (`.ipynb`) individualmente en Colab.
+    *   Sigue las instrucciones dentro de cada notebook para instalar dependencias y configurar API Keys.
+
+3.  **Opción B: Ejecutar Localmente:**
+    *   **Crea un entorno virtual (recomendado):**
+        ```bash
+        python -m venv adk-env
+        source adk-env/bin/activate  # En Windows: adk-env\Scripts\activate
+        ```
+    *   **Instala las dependencias base:**
+        ```bash
+        pip install google-adk==1.4.2 litellm==1.73.0 python-dotenv pydantic jupyter
+        ```
+        *Nota: Cada notebook puede requerir la instalación de paquetes adicionales.*
+    *   **Configura tus API Keys:**
+        *   Crea un archivo `.env` en la raíz del proyecto (puedes copiar de `.env.example` si se proporciona).
+        *   Añade tus API Keys al archivo `.env`:
+            ```env
+            GOOGLE_API_KEY="tu_google_api_key"
+            OPENAI_API_KEY="tu_openai_api_key"
+            ANTHROPIC_API_KEY="tu_anthropic_api_key"
+            # Para Azure OpenAI
+            # AZURE_API_KEY="tu_azure_api_key"
+            # AZURE_API_BASE="tu_azure_endpoint"
+            # AZURE_API_VERSION="tu_api_version"
+            ```
+    *   **Inicia Jupyter Notebook o JupyterLab:**
+        ```bash
+        jupyter lab
+        # o
+        jupyter notebook
+        ```
+    *   Abre los notebooks (`.ipynb`) y sigue las instrucciones.
+
+## 🔑 Conceptos Clave Cubiertos
+
+*   `LlmAgent`: El componente central para crear agentes basados en LLM.
+*   `LiteLlm`: Para usar una amplia variedad de modelos de lenguaje.
+*   `google_search`: Herramienta preconstruida para búsquedas en Google.
+*   `BuiltInCodeExecutor`: Para ejecutar código Python de forma segura.
+*   **Herramientas Personalizadas**: Funciones Python decoradas o simplemente pasadas como lista al agente.
+*   `generate_content_config`: Para especificar parámetros como `temperature`, `max_output_tokens`, `top_p`.
+*   `output_schema`: Para definir la estructura de salida deseada usando modelos Pydantic.
+*   `Runner`: Para gestionar la ejecución e interacción con los agentes.
+*   `InMemorySessionService`: Para gestionar el historial de conversación en memoria.
+*   Type Hints y Docstrings: Esenciales para que ADK entienda la funcionalidad y los parámetros de las herramientas.
+
+## 🙌 Contribuciones
+
+Las contribuciones son bienvenidas. Si encuentras errores, tienes sugerencias o quieres añadir nuevos ejemplos, por favor abre un _issue_ o envía un _pull request_.
+
+## 📄 Licencia
+
+Este proyecto se distribuye bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
+## 🙏 Agradecimientos
+
+*   Al equipo de Google por desarrollar y mantener el Agent Development Kit.
+*   A las comunidades de LiteLLM y Pydantic por sus excelentes bibliotecas.
+
+---
+
+¡Esperamos que este curso te sea de gran utilidad para dominar el Google ADK!
+
+
+Recomendaciones Adicionales para tu Repositorio:
+
+.gitignore: Asegúrate de tener un archivo .gitignore que excluya archivos como .env, entornos virtuales (adk-env/), y archivos de caché de Jupyter (.ipynb_checkpoints/, __pycache__/).
+
+Generated code
+# .gitignore
+.env
+adk-env/
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+IGNORE_WHEN_COPYING_END
+
+.env.example: Crea un archivo .env.example para mostrar qué variables de entorno se necesitan, sin incluir tus claves reales.
+
+Generated env
+# .env.example
+GOOGLE_API_KEY="TU_GOOGLE_API_KEY_AQUI"
+# Opcional:
+OPENAI_API_KEY="TU_OPENAI_API_KEY_AQUI"
+ANTHROPIC_API_KEY="TU_ANTHROPIC_API_KEY_AQUI"
+# Para Azure OpenAI, si lo usas:
+# AZURE_API_KEY="TU_AZURE_API_KEY_AQUI"
+# AZURE_API_BASE="TU_ENDPOINT_AZURE_AQUI"
+# AZURE_API_VERSION="TU_VERSION_API_AZURE_AQUI" # ej. 2023-07-01-preview
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Env
+IGNORE_WHEN_COPYING_END
+
+Estructura de Carpetas (Opcional): Si el proyecto crece, podrías organizar los notebooks en subcarpetas (ej., 01-Introduccion/, 02-Manejo-LLMs/, etc.).
+
+Reemplaza los placeholders: No olvides cambiar TU_USUARIO/TU_REPOSITORIO en el enlace de Colab.
+
+Este README debería proporcionar una excelente introducción y guía para los usuarios de tu curso. ¡Mucha suerte!
