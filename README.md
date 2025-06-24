@@ -25,6 +25,7 @@ Este curso está estructurado en varios módulos, cada uno enfocado en un aspect
     *   Ajuste fino del comportamiento del LLM con parámetros (`temperature`, `top_p`, `max_output_tokens`).
     *   Generación de **output estructurado** utilizando Pydantic para respuestas JSON predecibles y validadas.
     *   Ejemplos prácticos comparando diferentes modelos y configuraciones.
+- [Ver Video Tutorial](https://youtu.be/WF1NwVd-nbU)   
 
 3.  **Módulo 3: Dominando las Herramientas (Tools)**
     *   Concepto y importancia de las Herramientas en ADK.
@@ -38,7 +39,8 @@ Este curso está estructurado en varios módulos, cada uno enfocado en un aspect
     *   Casos de uso avanzados:
         *   Herramientas con estado y contexto (ej. carrito de compras).
         *   Combinación de múltiples herramientas en un agente especializado (ej. agente de e-commerce).
-
+- [Ver Video Tutorial](https://youtu.be/RaW3U5Sb9ks)   
+     
 ## 🛠️ Prerrequisitos
 
 *   Conocimientos básicos de Python.
