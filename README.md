@@ -18,6 +18,7 @@ Este curso está estructurado en varios módulos, cada uno enfocado en un aspect
     *   Componentes principales: Agentes, Herramientas (Tools), Ejecutores (Runners) y Sesiones (Sessions).
     *   Creación de tu primer agente funcional con búsqueda en Google.
     *   Uso de `adk web` y `adk run` para interactuar con agentes.
+- [Ver Video Tutorial](https://youtu.be/zgc8l1c83x8)   
 
 2.  **Módulo 2: Manejo Avanzado de LLMs**
     *   Flexibilidad de modelos con **LiteLLM**: Integración de Claude, GPT, Llama y otros.
