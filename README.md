@@ -1,4 +1,5 @@
 # 🚀 Curso Práctico de Google Agent Development Kit (ADK) 🤖
+![Copia de Copia de Copia de Copia de Copia de Creacion de agentes AI](https://github.com/user-attachments/assets/4fd4c71f-c6ec-4f78-a49f-0c0e6a61f1e4)
 
 ¡Bienvenido al curso práctico y avanzado sobre el Google Agent Development Kit (ADK)! Este repositorio contiene una serie de notebooks de Jupyter diseñados para llevarte desde los fundamentos hasta técnicas avanzadas en el desarrollo de agentes de IA con ADK.
 
@@ -10,7 +11,7 @@ El Agent Development Kit (ADK) de Google es un framework de código abierto dise
 
 Este curso está estructurado en varios módulos, cada uno enfocado en un aspecto clave de ADK:
 
-1.  **Módulo 1: Introducción al ADK (`sources/Clase 1 - Introducción al Desarrollo de Agentes de IA con Google ADK`)**
+1.  **Módulo 1: Introducción al ADK**
     *   Conceptos fundamentales del ADK.
     *   Ventajas clave y por qué usarlo.
     *   Instalación y configuración del entorno.
@@ -18,13 +19,13 @@ Este curso está estructurado en varios módulos, cada uno enfocado en un aspect
     *   Creación de tu primer agente funcional con búsqueda en Google.
     *   Uso de `adk web` y `adk run` para interactuar con agentes.
 
-2.  **Módulo 2: Manejo Avanzado de LLMs (`Manejo_de_LLM.ipynb`)**
+2.  **Módulo 2: Manejo Avanzado de LLMs**
     *   Flexibilidad de modelos con **LiteLLM**: Integración de Claude, GPT, Llama y otros.
     *   Ajuste fino del comportamiento del LLM con parámetros (`temperature`, `top_p`, `max_output_tokens`).
     *   Generación de **output estructurado** utilizando Pydantic para respuestas JSON predecibles y validadas.
     *   Ejemplos prácticos comparando diferentes modelos y configuraciones.
 
-3.  **Módulo 3: Dominando las Herramientas (Tools) (`Uso_de_Tools.ipynb`)**
+3.  **Módulo 3: Dominando las Herramientas (Tools)**
     *   Concepto y importancia de las Herramientas en ADK.
     *   Uso de **herramientas preconstruidas**:
         *   `google_search`: Para búsqueda de información actualizada.
@@ -84,8 +85,11 @@ Este curso está estructurado en varios módulos, cada uno enfocado en un aspect
         jupyter lab
         # o
         jupyter notebook
+        # o
+        Cualquier IDE  de confianza
         ```
     *   Abre los notebooks (`.ipynb`) y sigue las instrucciones.
+    *   Recuerda seguir tambien los archivos .py con adk web o adk run
 
 ## 🔑 Conceptos Clave Cubiertos
 
